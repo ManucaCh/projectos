@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practica de form</title>
+  </head>
+  <body>
+    <form action="" method="POST">
+      <div>
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" required />
+      </div>
+      <div>
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido" required />
+      </div>
+      <div>
+        <label for="edad">Edad</label>
+        <input type="number" min="1" max="130" name="edad" required />
+      </div>
+      <div>
+        <label for="nacionalidad">Nacionalidad</label>
+        <select name="nacionalidad" id="" required>
+          <option value="0" disabled>Elegir Nacionalidad</option>
+          <option value="1">Argentina</option>
+          <option value="2">Brasil</option>
+          <option value="3">Peru</option>
+          <option value="4">Chile</option>
+          <option value="5">Bolivia</option>
+          <option value="6">Paraguay</option>
+          <option value="7">Uruguay</option>
+        </select>
+      </div>
+      <div>
+        <label for="hobbies">Hobbies</label>
+        <input type="checkbox" name="hobbies-1" id="checkbox-1" />
+        <label for="checkbox-1">Hobby 1</label>
+        <input type="checkbox" name="hobbies-2" id="checkbox-2" />
+        <label for="checkbox-2">Hobby 2</label>
+        <input type="checkbox" name="hobbies-3" id="checkbox-3" />
+        <label for="checkbox-3">Hobby 3</label>
+      </div>
+      <div>
+        <input type="submit" />
+      </div>
+    </form>
+  </body>
+</html>
