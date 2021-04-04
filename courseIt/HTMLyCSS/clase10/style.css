@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 600px;
+    width: 500px;
+    background-color: plum;
+  
+}
+div{
+    height: 150px;
+    width: 150px;
+}
+
+.producto-1{
+   
+    background-color: aliceblue;}
+
+.producto-2{
+    
+    background-color: rgb(190, 222, 250);}
+
+.producto-3{
+    
+    background-color: rgb(133, 194, 248);}
+
+.producto-4{
+   
+    background-color: rgb(86, 174, 252);}
+
+.producto-5{
+    
+    background-color: rgb(49, 153, 245);}
+
+.producto-6{
+        background-color: rgb(13, 137, 245);}
+}

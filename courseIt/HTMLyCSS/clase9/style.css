@@ -1,0 +1,39 @@
+body {
+  background-color: #252525;
+}
+.container {
+  padding: 10px;
+  width: 250px;
+  height: 30px;
+}
+
+.search {
+  width: 250px;
+  height: 30px;
+}
+
+.type-search {
+  background-color: #3f334c;
+  border-radius: 10px;
+  width: 250px;
+  height: 30px;
+
+  border-color: transparent;
+}
+
+.circle {
+  background-color: #de2668;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  border-radius: 100%;
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 225px;
+  text-align: justify;
+}
+
+.x-circle {
+  text-align: center;
+}
