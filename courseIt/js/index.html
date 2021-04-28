@@ -8,23 +8,80 @@
   </head>
   <body>
     <script>
-      const name = "Manu";
-      let age = 29;
-      const surname = "Chaves";
-      const hobbie = "pintar";
+      console.log(`------OBJETOS-----`);
+      const person = {
+        name: "Manu",
+        surname: "Chaves",
+        age: 29,
+        hobbie: "pintar",
+      };
 
       console.log(
-        `Hola, mi nombre es ${name} ${surname}. Tengo ${age} años y me gusta ${hobbie}.`
+        `Hola, mi nombre es ${person.name} ${person.surname}. Tengo ${person.age} años y me gusta ${person.hobbie}.`
       );
 
       const kids = 4;
       const candies = 27;
       const candiesPerKid = Math.floor(candies / kids);
-      const extraCandies = candies - candiesPerKid * kids;
+      const extraCandies = candies % kids;
 
       console.log(
         `Si reparto ${candies} caramelos entre ${kids} chicos, cada uno obtendrá ${candiesPerKid} caramelos y sobrarán ${extraCandies}.`
       );
+
+      console.log(`------ARRAYS-----`);
+      const favouriteBG = [
+        "Terra Mystica",
+        "Bunny Kingdom",
+        "The Castles of Burgundy",
+      ];
+
+      console.log(favouriteBG[0]);
+      console.log(favouriteBG[1]);
+      console.log(favouriteBG[2]);
+
+      console.log(
+        `Mis top tres de juegos de mesa incluye ${favouriteBG[0]}, ${favouriteBG[1]} y ${favouriteBG[2]}.`
+      );
+
+      console.log(`------BOOLEANOS Y OPERADORES DE IGUALDAD-----`);
+      const age = Math.floor(Math.random() * 101);
+
+      if (age >= 65) {
+        console.log("Soy jubilado");
+      } else if (age >= 18 && age < 65) {
+        console.log("Soy mayor de edad");
+      } else {
+        console.log("Soy menor de edad");
+      }
+
+      console.log(`------CONDICIONALES Y OPERACIONES DE COMPARACION-----`);
+      const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      var number = numbers[Math.floor(Math.random() * numbers.length)];
+      if (number % 2 == 0) {
+        console.log(`${number} es un numero par`);
+      } else {
+        console.log(`${number} es un numero impar`);
+      }
+
+      numbers.push(11, 12, 13, 14, 15, 16, 17, 18, 19, 20);
+      var number = numbers[Math.floor(Math.random() * numbers.length)];
+      if (number % 3 == 0) {
+        console.log(`${number} es un numero divisible por 3`);
+      } else if (number % 5 == 0) {
+        console.log(`es un numero divisible por 5`);
+      } else {
+        console.log(`El numero no es divisible ni por 3 ni por 5`);
+      }
+
+      var number = numbers[Math.floor(Math.random() * numbers.length)];
+      if (number % 2 == 0 && number % 3 == 0) {
+        console.log(`${number} es divisible por 2 y 3 al mismo tiempo`);
+      } else {
+        console.log(`El numero no es divisible por 2 y 3 al mismo tiempo`);
+      }
+
+      console.log(`------FUNCIONES-----`);
     </script>
   </body>
 </html>
