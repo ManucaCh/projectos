@@ -8,80 +8,180 @@
   </head>
   <body>
     <script>
-      console.log(`------OBJETOS-----`);
-      const person = {
-        name: "Manu",
-        surname: "Chaves",
-        age: 29,
-        hobbie: "pintar",
-      };
+      // console.log(`------OBJETOS-----`);
+      // const person = {
+      //   name: "Manu",
+      //   surname: "Chaves",
+      //   age: 29,
+      //   hobbie: "pintar",
+      // };
 
-      console.log(
-        `Hola, mi nombre es ${person.name} ${person.surname}. Tengo ${person.age} años y me gusta ${person.hobbie}.`
-      );
+      // console.log(
+      //   `Hola, mi nombre es ${person.name} ${person.surname}. Tengo ${person.age} años y me gusta ${person.hobbie}.`
+      // );
 
-      const kids = 4;
-      const candies = 27;
-      const candiesPerKid = Math.floor(candies / kids);
-      const extraCandies = candies % kids;
+      // const kids = 4;
+      // const candies = 27;
+      // const candiesPerKid = Math.floor(candies / kids);
+      // const extraCandies = candies % kids;
 
-      console.log(
-        `Si reparto ${candies} caramelos entre ${kids} chicos, cada uno obtendrá ${candiesPerKid} caramelos y sobrarán ${extraCandies}.`
-      );
+      // console.log(
+      //   `Si reparto ${candies} caramelos entre ${kids} chicos, cada uno obtendrá ${candiesPerKid} caramelos y sobrarán ${extraCandies}.`
+      // );
 
-      console.log(`------ARRAYS-----`);
-      const favouriteBG = [
-        "Terra Mystica",
-        "Bunny Kingdom",
-        "The Castles of Burgundy",
+      // console.log(`------ARRAYS-----`);
+      // const favouriteBG = [
+      //   "Terra Mystica",
+      //   "Bunny Kingdom",
+      //   "The Castles of Burgundy",
+      // ];
+
+      // console.log(favouriteBG[0]);
+      // console.log(favouriteBG[1]);
+      // console.log(favouriteBG[2]);
+
+      // console.log(
+      //   `Mis top tres de juegos de mesa incluye ${favouriteBG[0]}, ${favouriteBG[1]} y ${favouriteBG[2]}.`
+      // );
+
+      // console.log(`------BOOLEANOS Y OPERADORES DE IGUALDAD-----`);
+      // const age = Math.floor(Math.random() * 101);
+
+      // if (age >= 65) {
+      //   console.log("Soy jubilado");
+      // } else if (age >= 18 && age < 65) {
+      //   console.log("Soy mayor de edad");
+      // } else {
+      //   console.log("Soy menor de edad");
+      // }
+
+      // console.log(`------CONDICIONALES Y OPERACIONES DE COMPARACION-----`);
+      // const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      // var number = numbers[Math.floor(Math.random() * numbers.length)];
+      // if (number % 2 == 0) {
+      //   console.log(`${number} es un numero par`);
+      // } else {
+      //   console.log(`${number} es un numero impar`);
+      // }
+
+      // numbers.push(11, 12, 13, 14, 15, 16, 17, 18, 19, 20);
+      // var number = numbers[Math.floor(Math.random() * numbers.length)];
+      // if (number % 3 == 0) {
+      //   console.log(`${number} es un numero divisible por 3`);
+      // } else if (number % 5 == 0) {
+      //   console.log(`es un numero divisible por 5`);
+      // } else {
+      //   console.log(`El numero no es divisible ni por 3 ni por 5`);
+      // }
+
+      // var number = numbers[Math.floor(Math.random() * numbers.length)];
+      // if (number % 2 == 0 && number % 3 == 0) {
+      //   console.log(`${number} es divisible por 2 y 3 al mismo tiempo`);
+      // } else {
+      //   console.log(`El numero no es divisible por 2 y 3 al mismo tiempo`);
+      // }
+
+      // console.log(`------FUNCIONES-----`);
+
+      // const age1 = 10;
+      // const age2 = 20;
+      // const age3 = 18;
+      // const age4 = 1;
+      // const age5 = 58;
+
+      // function checkAge(age) {
+      //   if (age >= 18) {
+      //     console.log("Puede entrar");
+      //   } else {
+      //     console.log("No puede entrar");
+      //   }
+      // }
+
+      // checkAge(age1);
+      // checkAge(age2);
+      // checkAge(age3);
+      // checkAge(age4);
+      // checkAge(age5);
+
+      let numb1 = Math.floor(Math.random() * 31);
+      let numb2 = Math.floor(Math.random() * 101);
+
+      function aditionTest(a, b) {
+        console.log(`La suma entre ${a} + ${b} es ` + (a + b));
+      }
+
+      aditionTest(numb1, numb2);
+
+      function evenOdd(a) {
+        if (a % 2 == 0) {
+          console.log(`${a} es un numero par`);
+        } else {
+          console.log(`${a} es un numero impar`);
+        }
+      }
+
+      evenOdd(numb1);
+
+      // function isMultiple(a) {
+      //   if (a % 5 == 0 && a % 3 == 0) {
+      //     console.log(`${a} es multiplo tanto de 3 como de 5`);
+      //   } else if (a % 5 == 0) {
+      //     console.log(`${a} es multiplo de 5`);
+      //   } else if (a % 3 == 0) {
+      //     console.log(`${a} es multiplo de 3`);
+      //   } else {
+      //     console.log(`${a} no es multiplo ni de 3 ni de 5`);
+      //   }
+      // }
+
+      // isMultiple(numb2);
+
+      function isMultiple3(a) {
+        if (a % 3 == 0 || a % 5 == 0) {
+          console.log(`${a} es multiplo de 3 o de 5`);
+        } else {
+          console.log(`${a} no es multiplo de 3 o de 5`);
+        }
+      }
+
+      isMultiple3(numb2);
+
+      var months = [
+        "enero",
+        "febrero",
+        "marzo",
+        "abril",
+        "mayo",
+        "junio",
+        "julio",
+        "agosto",
+        "septiembre",
+        "octubre",
+        "noviembre",
+        "diciembre",
       ];
 
-      console.log(favouriteBG[0]);
-      console.log(favouriteBG[1]);
-      console.log(favouriteBG[2]);
+      var randomMonth = months[Math.floor(Math.random() * months.length)];
 
-      console.log(
-        `Mis top tres de juegos de mesa incluye ${favouriteBG[0]}, ${favouriteBG[1]} y ${favouriteBG[2]}.`
-      );
-
-      console.log(`------BOOLEANOS Y OPERADORES DE IGUALDAD-----`);
-      const age = Math.floor(Math.random() * 101);
-
-      if (age >= 65) {
-        console.log("Soy jubilado");
-      } else if (age >= 18 && age < 65) {
-        console.log("Soy mayor de edad");
-      } else {
-        console.log("Soy menor de edad");
+      function numberDays(month) {
+        if (month == "febrero") {
+          console.log(`${month} tiene 28 o 29 dias`);
+        } else if (
+          month == "enero" ||
+          month == "marzo" ||
+          month == "mayo" ||
+          month == "julio" ||
+          month == "agosto" ||
+          month == "octubre" ||
+          month == "diciembre"
+        ) {
+          console.log(`${month} tiene 31 dias`);
+        } else {
+          console.log(`${month} tiene 30 dias`);
+        }
       }
 
-      console.log(`------CONDICIONALES Y OPERACIONES DE COMPARACION-----`);
-      const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-      var number = numbers[Math.floor(Math.random() * numbers.length)];
-      if (number % 2 == 0) {
-        console.log(`${number} es un numero par`);
-      } else {
-        console.log(`${number} es un numero impar`);
-      }
-
-      numbers.push(11, 12, 13, 14, 15, 16, 17, 18, 19, 20);
-      var number = numbers[Math.floor(Math.random() * numbers.length)];
-      if (number % 3 == 0) {
-        console.log(`${number} es un numero divisible por 3`);
-      } else if (number % 5 == 0) {
-        console.log(`es un numero divisible por 5`);
-      } else {
-        console.log(`El numero no es divisible ni por 3 ni por 5`);
-      }
-
-      var number = numbers[Math.floor(Math.random() * numbers.length)];
-      if (number % 2 == 0 && number % 3 == 0) {
-        console.log(`${number} es divisible por 2 y 3 al mismo tiempo`);
-      } else {
-        console.log(`El numero no es divisible por 2 y 3 al mismo tiempo`);
-      }
-
-      console.log(`------FUNCIONES-----`);
+      numberDays(randomMonth);
     </script>
   </body>
 </html>
