@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="count">Primero</li>
+        <li class="count">Segundo</li>
+        <li class="count">Tercero</li>
+      </ul>
+
+      <span id="result"></span>
+
+      <div>
+        <p id="firstp" class="p">Soy el primer parrafo</p>
+        <p class="p">Soy el segundo parrafo</p>
+      </div>
+      <p>Soy el tercer parrafo</p>
+    </nav>
+    <script>
+      const liLenght = document.getElementsByClassName("count").length;
+      const result = document.getElementById("result");
+      result.innerHTML = `Actualmente tenemos ${liLenght} lis`;
+    </script>
+  </body>
+</html>
